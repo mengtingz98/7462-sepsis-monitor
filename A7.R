@@ -9,12 +9,12 @@ df <- initializePatients()
 library(googledrive)
 
 # We have to write the file to disk first, then upload it
-df %>% write_csv("sepsis_report_temp.csv")
+#df %>% write_csv("sepsis_report_temp.csv")
 
 # Uploading happens here
-drive_put(media = "sepsis_report_temp.csv",  
-          path = "https://drive.google.com/drive/folders/1ml6Uz3Vo13x5Zd9UEWWghAsVLgldOqV6",
-          name = "sepsis_report.csv")
+#drive_put(media = "sepsis_report_temp.csv",  
+          #path = "https://drive.google.com/drive/folders/1ml6Uz3Vo13x5Zd9UEWWghAsVLgldOqV6",
+          #name = "sepsis_report.csv")
 
 #R script that reads in the current sepsis_report.csv file from Google Drive, 
 
