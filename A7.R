@@ -26,7 +26,7 @@ sepsis
 
 #updates it using the updatePatients function, 
 
-sepsis_v2 <- updatePatients(sepsis)
+sepsis_v2 <- updatePatients(sepsis, 10)
 
 #and writes the updated file back to Google Drive (FYI, you can use the drive_put command above to replace an existing file with a new version).
 sepsis_v2 %>% write_csv("sepsis_v2.csv")
