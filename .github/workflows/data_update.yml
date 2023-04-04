@@ -5,8 +5,6 @@ on:
 
 name: Update Data
 
-name: Render Report
-
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
