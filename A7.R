@@ -4,7 +4,7 @@ library(lubridate)
 
 source("sepsis_monitor_functions.R")
 
-df <- initializePatients()
+#df <- initializePatients()
 
 library(googledrive)
 
@@ -21,8 +21,6 @@ library(googledrive)
 file_link <- "https://drive.google.com/file/d/19JJd6SLHTHZZ8ojisx0bpKjxQTAF7aOj/view"
 sepsis <- drive_read_string(file_link) %>%
   read_csv()
-
-sepsis
 
 #updates it using the updatePatients function, 
 
